@@ -87,7 +87,7 @@ class Dog
     puts "#{dog}"
     if dog != nil
       row = dog[0]
-      new_dog = Dog.new(name: row[1], breed: row[2])
+      new_dog = Dog.new(id: row[0],name: row[1], breed: row[2])
       new_dog
     else
       self.create(name: name, breed: breed)
