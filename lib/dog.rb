@@ -81,7 +81,7 @@ class Dog
     sql = <<-SQL
       SELECT *
       FROM dogs
-      WHERE name = ? AND breed = ? c
+      WHERE name = ? AND breed = ?
     SQL
     dog = DB[:conn].execute(sql, name, breed).first
     puts "#{dog}"
