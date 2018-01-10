@@ -88,6 +88,7 @@ class Dog
     if dog != nil
       row = dog[0]
       new_dog = Dog.new(name: row[1], breed: row[2])
+      new_dog
     else
       self.create(name: name, breed: breed)
     end
